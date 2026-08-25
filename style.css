@@ -1,24 +1,30 @@
-body {
+
+* {
+    box-sizing: content-box;
+  }
+    body {
     background-color: rgba(255, 181, 44, 0.699);    /*Obvious*/
+    margin-left: 40px;
 }
 p {
     margin-bottom: 30px;
-    font-size: 1.3em;
+    font-size: 1.3rem;
 
 }
 th, td {
-    background-color: rgb(203, 239, 253);
+    background-color: rgb(224, 183, 240);
     padding: 10px;
     text-align: center;
    }
 h1 {
+    width: 40em;
     background-color: #ddd;
     border-radius: 20px 160px;
     border: medium solid brown;
     padding: 1rem 2rem;
     font-family: "monospace";
     }
-table, th, td {
+table,th, td {
     border: 2px solid;
     border-collapse: collapse;
     font: 150% cursive;
@@ -26,9 +32,16 @@ table, th, td {
 .inhalt {                          /*classes will be called with a . before the name in css*/
     display: flex;                  /* tells css to allign parent and child next to eachother*/
     align-items: flex-start;
-    gap: 40px;
+    gap: 60px;
 }
 
 .ereignisse {
     width: 500px;                /* width of the whole textfield, too low and you´ll have a few words before going to the next line*/
+    font-size: 1.2rem;
+}
+td:nth-child(6) {                           /* every 6th cell in the table is colored blue, cause td´s are childs to tr */
+    background-color: rgb(89, 126, 230);
+}
+td:nth-child(7) {
+    background-color: rgb(250, 94, 94);
 }
